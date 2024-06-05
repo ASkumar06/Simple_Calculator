@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="simplecalculatorstyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <button>Simple Calculator</button>
+            <img class="calc-logo" src="calc icons/calculator.png">
+        </div>
+        <div class="display">0</div>
+        <div class="buttons">
+            <div class="button" onclick="
+               headerInput=inputNumber(7);
+                console.log(headerInput);">
+                7</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(8);
+             console.log(headerInput);">
+             8</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(9);
+             console.log(headerInput);">
+             9</div>
+            <div class="button operation-button" onclick="
+            headerInput=inputNumber('/');
+             console.log(headerInput);">
+             &#xF7</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(4);
+             console.log(headerInput);">
+             4</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(5);
+             console.log(headerInput);">
+             5</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(6);
+             console.log(headerInput);">
+             6</div>
+            <div class="button operation-button" onclick="
+            headerInput=inputNumber('*');
+             console.log(headerInput);">
+             x</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(1);
+             console.log(headerInput);">
+             1</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(2);
+             console.log(headerInput);">
+             2</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(3);
+             console.log(headerInput);">
+             3</div>
+            <div class="button operation-button" onclick="
+            headerInput=inputNumber('-');
+             console.log(headerInput);">
+             -</div>
+            <div class="button" onclick="
+            headerInput=inputNumber(0);
+             console.log(headerInput);">
+             0</div>
+            <div class="button clear-button" onclick="
+             clearHeader();
+             console.log(headerInput);">
+             CLR</div>
+            <div class="button" onclick="
+             headerInput=calculate(headerInput);
+             console.log(headerInput);">
+             =</div>
+            <div class="button operation-button" onclick="
+            headerInput=inputNumber('+');
+             console.log(headerInput);">
+             +</div>
+        </div>
+    </div>
+    <script src="simplecalculator.js">
+    </script>
+</body>
+</html>
